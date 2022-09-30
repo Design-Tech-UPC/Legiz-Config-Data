@@ -1,7 +1,6 @@
 server:
   port: 30006
 
-
 springdoc:
   api-docs:
     path: /legiz-api-docs
@@ -18,14 +17,4 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
-server:
-  tomcat:
-    relaxed-query-chars: '|,{,},[,]'
-logging:
-  level:
-    org:
-      hibernate:
-        type: TRACE
-        SQL: DEBUG
-
 
