@@ -1,0 +1,19 @@
+server:
+  port: 30006
+
+springdoc:
+  api-docs:
+    path: /legiz-api-docs
+  swagger-ui:
+    path: /legiz-api-docs-ui.html
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/legalcontract
+    password: admin
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
