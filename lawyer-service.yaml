@@ -1,5 +1,5 @@
 server:
-  port: 30002
+  port: 30004
  
 
 # MySQL Data Source Configuration
