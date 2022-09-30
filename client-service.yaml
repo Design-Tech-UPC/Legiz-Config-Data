@@ -1,2 +1,23 @@
 server:
   port: 30001
+  
+ 
+# MySQL Data Source Configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/legizclient
+    username: root
+    password: admin
+  # MySQL Dialect configuration
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        ddl-auto: update
+
+springdoc:
+  api-docs:
+    path: /legiz-client-api-docs
+  swagger-ui:
+    path: /legiz-client-api-docs-ui.html
+
